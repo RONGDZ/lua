@@ -30,7 +30,7 @@ static void execstr (void)
  if (lua_isstring(obj)) lua_dostring(lua_getstring(obj));
 }
 
-void main (int argc, char *argv[])
+int main (int argc, char *argv[])
 {
  int i;
  if (argc < 2)
@@ -49,6 +49,7 @@ void main (int argc, char *argv[])
  {
   lua_call (argv[i],0);
  }
+ return 0;
 }
 
 
