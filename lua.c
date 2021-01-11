@@ -44,6 +44,10 @@ int main (int argc, char *argv[])
  iolib_open ();
  strlib_open ();
  mathlib_open ();
+//  lua_State *L = lua_open();
+//  luaL_openlibs(L);
+//  const char *buf = "print('hello, lua!')";
+//  luaL_dostring(L, buf);
  lua_dofile (argv[1]);
  for (i=2; i<argc; i++)
  {

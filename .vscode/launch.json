@@ -11,7 +11,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/lua",
             "args": [
-                "test.lua"
+                "hello.lua"
             ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
